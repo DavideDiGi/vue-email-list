@@ -10,8 +10,11 @@
 </head>
 <body>
     
-    <div class="app">
-
+    <div id="app">
+        <h2>Email generate:</h2>
+        <ul>
+            <li v-for="(email, index) in emailAddress ">Numero utente: {{ emailAddress[index] }}</li>
+        </ul>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
